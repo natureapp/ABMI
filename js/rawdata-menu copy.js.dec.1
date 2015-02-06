@@ -1,0 +1,819 @@
+/* -----------------------------------------------------------------------
+
+ABMI Slide Navigation Menu / JS File (Menu System)
+Version: 1.0
+Latest Update: 20/11/2014
+By: Syncopate Media
+Email: hosting@syncopatemedia.com
+
+----------------------------------------------------------------------- */
+
+$(function(){ 
+	
+			$("div#get-data-btn").click(function(e) {
+
+				e.preventDefault();
+				
+				var allDataFields = $('#data-input-container').find('input:checkbox');
+				var jsonData = [{}];
+
+	            allDataFields.each(function(){
+					
+					jsonData[$(this).prop('id')] = $(this).prop('checked');
+					
+					//DEBUG
+					console.log($(this).prop('id') + ' >> '+$(this).prop('checked') );
+						
+	            });  
+            	
+            	$('.region-form').trigger("reset");
+            	$('.terrestrial-form').trigger("reset");
+            	$('.wetland-form').trigger("reset");
+            	$('.years-form').trigger("reset");
+            	$('.data-type-form').trigger("reset");
+
+            	$('#data-input-container').find('label').each(function(){
+            		if( $(this).hasClass('highlight') ){ $(this).removeClass('highlight'); }
+            	});
+            	
+            	var a = [".sub-sub-options",".sub-optns",".sub-natural-regions",".sub-options1",".terrestrial-slide-nav",".wetland-slide-nav",".region-slide-nav",".years-slide-nav",".data-type-slide-nav",".slide-nav"];
+				a.forEach(function(element) {
+					$(element).each(function(){
+						if ($(this).is(":visible")) { $(this).hide(); }
+					});
+				});
+                        
+				//AJAX
+				$.ajax({
+				  type: "POST",
+				  cache: false,
+				  url: "processingfile.html",
+				  data: jsonData
+				})
+					.done(function( html ) {
+					
+						$('#rawdata-content').fadeOut( 400, function() {	
+							$('#rawdata-content').html( html ).fadeIn( 800 );  
+						});
+
+					});//done ajax
+				
+			});//function 
+	
+
+            /* GENERAL SECTION */ 
+
+            $(".slide-nav").hide();
+            $("#map-container").hide();
+            //$('.parent').unbind("mouseover");
+            
+             $(".gis-data").hide();
+            
+            $(".terrestrial-slide-nav").hide();
+            //$('.terrestrial').unbind("mouseover");
+            $(".sub-options1").hide();
+
+
+            $(".wetland-slide-nav").hide();
+            //$('.wetland').unbind("mouseover");
+            $(".sub-options2").hide();
+
+
+            $(".region-slide-nav").hide();
+            //$('.region').unbind("mouseover");
+            $(".sub-natural-regions").hide();
+            $('.sub-sub-options').hide();            
+
+            $(".years-slide-nav").hide();
+            //$('.years').unbind("mouseover");
+
+            $(".data-type-slide-nav").hide();
+            //$('.data-type').unbind("mouseover");   
+            
+            /*         
+            $(".parent").mouseover(function() {
+                if ($(".slide-nav").is(":hidden")) {
+                    $(".slide-nav").toggle();
+                    $('.parent').toggleClass('parent-active');
+
+                } else {
+
+                }
+            });
+            */
+
+            $(".parent").click(function() {
+
+				
+				$(".slide-nav > .menu-child").hide();
+
+	            $(".slide-nav").animate({width: 'toggle'}, function(){
+		            $(".slide-nav > .menu-child").fadeToggle(200, "linear");    
+		        });
+				
+				if ($("#map-container").is(":visible")) {
+					$("#map-container").fadeToggle(200, "linear");
+				//map-container
+				}
+          
+                $('.parent').toggleClass('parent-active');
+
+                if ($(".terrestrial-slide-nava").is(":visible")) {
+                    $(".terrestrial-slide-nava").toggle();
+                    $('.terrestriala').toggleClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".wetland-slide-nava").is(":visible")) {
+                    $(".wetland-slide-nava").toggle();
+					$('.wetland-slide-nava').toggleClass('sub-parent-active');
+                } else {
+
+                }
+
+//$(".terrestrial-slide-nav").toggle();
+
+            });
+            
+            /* END GENERAL SECTION */ 
+
+
+			/* SIDENAV GIS DATA SUB MENU */ 
+			$(".parent-gis-data").click(function() {
+				
+				$(".gis-data").slideToggle(200, function(){
+					if( $(".gis-data").css('display') == 'none' ){ $(".parent-gis-data > a > i").css({'background-position':'-48px 0px'}); }
+					else{ $(".parent-gis-data > a > i").css({'background-position':'-28px 0px'}); }	
+				});
+
+			});
+			
+			
+            /* TERRESTRIAL SECTION */          
+
+			/*
+            $(".terrestrial").mouseover(function() {
+                if ($(".terrestrial-slide-nav").is(":hidden")) {
+                    $(".terrestrial-slide-nav").toggle();
+                    $('.terrestrial').toggleClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".wetland-slide-nav").is(":visible")) {
+                    $(".wetland-slide-nav").toggle();
+                    $('.wetland').removeClass('sub-parent-active');                 
+                } else {
+
+                }       
+
+                if ($(".region-slide-nav").is(":visible")) {
+                    $(".region-slide-nav").toggle();
+                    $('.region').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                }  
+
+
+                if ($(".years-slide-nav").is(":visible")) {
+                    $(".years-slide-nav").toggle();
+                    $('.years').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                } 
+
+                if ($(".data-type-slide-nav").is(":visible")) {
+                    $(".data-type-slide-nav").toggle();
+                    $('.data-type').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                }                                                              
+            });
+            */
+            $("a.first-child").click(function(){
+	            
+	            var thisE = $(this);
+
+				console.log('sweet child '+ thisE.prop('id'));
+            
+				thisE.addClass('sub-parent-active');
+				
+				thisE.next("div.sub-slide-nav").children(".menu-child").hide();
+
+	            thisE.next("div.sub-slide-nav").animate({width: 'toggle'}, function(){
+		            thisE.next("div.sub-slide-nav").children(".menu-child").fadeToggle(200, "linear", function(){
+			            
+			            $("a.first-child").each(function(){
+	
+							if( thisE.prop('id') != $(this).prop('id') ){
+								
+								if( $(this).hasClass('sub-parent-active') ){
+									$(this).removeClass('sub-parent-active');
+								}
+								
+								if( $(this).next("div.sub-slide-nav").is(":visible") ){
+									
+									var tnext = $(this).next("div.sub-slide-nav");
+									
+									tnext.children(".menu-child").fadeOut(100, function(){
+										tnext.fadeOut(200);
+									});
+			
+								}
+								
+							}//if not this
+							
+						});//for each cleanup
+						
+						//----------------------------------
+						if ( (thisE.next("div.sub-slide-nav").is(":visible") && !$("#map-container").is(":visible")) || (!thisE.next("div.sub-slide-nav").is(":visible") && $("#map-container").is(":visible")) ) {
+							$("#map-container").fadeToggle(200, "linear");
+						//map-container
+						}
+			            //----------------------------------
+			            			            
+		            });    
+		        });
+				
+
+            
+				
+				
+			});//a.first-child.click
+				
+			/*
+				$("a.first-child").next().each(function(){				
+            
+            
+            sub-slide-nav
+            
+            
+            $(".slide-nav > .menu-child").hide();
+
+	        $(".slide-nav").animate({width: 'toggle'}, function(){
+		            $(".slide-nav > .menu-child").fadeToggle(200, "linear");    
+		    });
+				
+			if ($("#map-container").is(":visible")) {
+				$("#map-container").fadeToggle(200, "linear");
+			//map-container
+			}
+			
+			$(".sub-parent-active").each
+*/
+
+            $(".terrestrialxx").click(function() {
+
+                $(".terrestrial-slide-nav").animate({width: 'toggle'});
+                $('.terrestrial').toggleClass('sub-parent-active');
+                //$('.terrestrial').bind("mouseover");
+
+                if ($(".wetland-slide-nav").is(":visible")) {
+                    $(".wetland-slide-nav").animate({width: 'toggle'});
+                    $('.wetland').removeClass('sub-parent-active');
+                } else {
+
+                }     
+
+                if ($(".region-slide-nav").is(":visible")) {
+                    $(".region-slide-nav").animate({width: 'toggle'});
+                    $('.region').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                }   
+
+
+                if ($(".years-slide-nav").is(":visible")) {
+                    $(".years-slide-nav").animate({width: 'toggle'});
+                    $('.years').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                } 
+
+                if ($(".data-type-slide-nav").is(":visible")) {
+                    $(".data-type-slide-nav").animate({width: 'toggle'});
+                    $('.data-type').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                }                                                                  
+
+            });
+
+
+            $('#1-8').change(function() {
+                if ($(this).is(':checked'))
+                    $('.sub-options1').show();
+                else
+                    $('.sub-options1').hide();
+                    $('input[name=habitat1]').attr('checked', false);
+                    $('input[name=habitat1]').parent().removeClass('highlight', this.checked);
+            }).change();
+
+
+            $('#select-terrestrial').click(function() {
+                $('input[name=terrestrial]').prop('checked', true);
+                $('input[name=terrestrial]').parent().addClass('highlight', this.checked);
+
+                setTimeout(function() {
+                    $('.sub-options1').show();
+                }, 180);
+
+                setTimeout(function() {
+                    $('input[name=habitat1]').prop('checked', true);
+                    $('input[name=habitat1]').parent().addClass('highlight', this.checked);
+                }, 200);
+
+            });
+
+            $('.terrestrial-form').on('change', 'input:checkbox', function() {
+                $(this).parent().toggleClass('highlight', this.checked);
+            });
+
+
+            $("#clear-terrestrial").click(function() {
+                $(".sub-options1").hide();
+                $('input[name=habitat1]').attr('checked', false);
+                $('input[name=terrestrial]').parent().removeClass('highlight', this.checked);
+                $('input[name=habitat1]').parent().removeClass('highlight', this.checked);
+            });
+
+
+            /* END TERRESTRIAL SECTION */ 
+
+
+            /* WETLAND SECTION */
+
+			/*
+            $(".wetland").mouseover(function() {
+                if ($(".wetland-slide-nav").is(":hidden")) {
+                    $(".wetland-slide-nav").toggle();
+                    $('.wetland').toggleClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".terrestrial-slide-nav").is(":visible")) {
+                    $(".terrestrial-slide-nav").toggle();
+                    $('.terrestrial').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".region-slide-nav").is(":visible")) {
+                    $(".region-slide-nav").toggle();
+                    $('.region').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                }   
+
+
+                if ($(".years-slide-nav").is(":visible")) {
+                    $(".years-slide-nav").toggle();
+                    $('.years').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                }   
+
+
+                if ($(".data-type-slide-nav").is(":visible")) {
+                    $(".data-type-slide-nav").toggle();
+                    $('.data-type').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                }   
+
+            });
+            */
+
+            $(".wetlandxx").click(function() {
+
+                $(".wetland-slide-nav").animate({width: 'toggle'});
+                $('.wetland').toggleClass('sub-parent-active');
+                //$('.wetland').bind("mouseover");
+
+                if ($(".terrestrial-slide-nav").is(":visible")) {
+                    $(".terrestrial-slide-nav").animate({width: 'toggle'});
+                    $('.terrestrial').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".region-slide-nav").is(":visible")) {
+                    $(".region-slide-nav").animate({width: 'toggle'});
+                    $('.region').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                }     
+
+
+                if ($(".years-slide-nav").is(":visible")) {
+                    $(".years-slide-nav").animate({width: 'toggle'});
+                    $('.years').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                } 
+
+                if ($(".data-type-slide-nav").is(":visible")) {
+                    $(".data-type-slide-nav").animate({width: 'toggle'});
+                    $('.data-type').removeClass('filter-sub-parent-active');                  
+                } else {
+
+                }                                                
+
+            });
+
+
+            $('#2-5').change(function() {
+                if ($(this).is(':checked'))
+                    $('.sub-options2').show();
+                else
+                    $('.sub-options2').hide();
+                $('input[name=habitat2]').attr('checked', false);
+                $('input[name=habitat2]').parent().removeClass('highlight', this.checked);
+            }).change();
+
+
+            $('#select-wetland').click(function() {
+                $('input[name=wetland]').prop('checked', true);
+                $('input[name=wetland]').parent().addClass('highlight', this.checked);
+
+                setTimeout(function() {
+                    $('.sub-options2').show();
+                }, 180);
+
+                setTimeout(function() {
+                    $('input[name=habitat2]').prop('checked', true);
+                    $('input[name=habitat2]').parent().addClass('highlight', this.checked);
+                }, 200);
+
+            });
+
+            $('.wetland-form').on('change', 'input:checkbox', function() {
+                $(this).parent().toggleClass('highlight', this.checked);
+            });
+
+
+            $("#clear-wetland").click(function() {
+                $(".sub-options2").hide();
+                $('input[name=habitat2]').attr('checked', false);
+                $('input[name=wetland]').parent().removeClass('highlight', this.checked);
+                $('input[name=habitat2]').parent().removeClass('highlight', this.checked);
+            });
+
+            /* END WETLAND SECTION */
+
+            /* REGION SECTION */
+
+			/*
+            $(".region").mouseover(function() {
+                if ($(".region-slide-nav").is(":hidden")) {
+                    $(".region-slide-nav").toggle();
+                    $('.region').toggleClass('filter-sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".terrestrial-slide-nav").is(":visible")) {
+                    $(".terrestrial-slide-nav").toggle();
+                    $('.terrestrial').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".wetland-slide-nav").is(":visible")) {
+                    $(".wetland-slide-nav").toggle();
+                    $('.wetland').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".years-slide-nav").is(":visible")) {
+                    $(".years-slide-nav").toggle();
+                    $('.years').removeClass('filter-sub-parent-active');           
+                } else {
+
+                }    
+
+
+                if ($(".data-type-slide-nav").is(":visible")) {
+                    $(".data-type-slide-nav").toggle();
+                    $('.data-type').removeClass('filter-sub-parent-active');          
+                } else {
+
+                }    
+                
+
+            });
+			*/
+
+            $(".regionxx").click(function() {
+
+                $(".region-slide-nav").animate({width: 'toggle'});
+                $('.region').toggleClass('filter-sub-parent-active');
+                //$('.region').bind("mouseover");
+
+                if ($(".terrestrial-slide-nav").is(":visible")) {
+                    $(".terrestrial-slide-nav").animate({width: 'toggle'});
+                    $('.terrestrial').removeClass('sub-parent-active');;
+                } else {
+
+                }
+
+                if ($(".wetland-slide-nav").is(":visible")) {
+                    $(".wetland-slide-nav").animate({width: 'toggle'});
+                    $('.wetland').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".years-slide-nav").is(":visible")) {
+                    $(".years-slide-nav").animate({width: 'toggle'});
+                    $('.years').removeClass('filter-sub-parent-active');           
+                } else {
+
+                }    
+
+
+                if ($(".data-type-slide-nav").is(":visible")) {
+                    $(".data-type-slide-nav").animate({width: 'toggle'});
+                    $('.data-type').removeClass('filter-sub-parent-active');         
+                } else {
+
+                }    
+                          
+
+
+            });
+
+
+			$(".region-form input[type=checkbox]").click(function() {
+				
+				var newhtml = '';
+				
+				//if($(this).prop('checked') && !$(this).hasClass('has-child-sub') ){
+					
+					var allDataFields = $('#data-input-container').find('input:checkbox');
+					var jsonData = [{'region-select': $(this).prop('id')}];
+
+					allDataFields.each(function(){
+					
+						jsonData[$(this).prop('id')] = $(this).prop('checked');
+						
+	            	}); 
+
+					//AJAX
+					$.ajax({
+					  type: "POST",
+					  cache: false,
+					  url: "getmapfile.html",
+					  data: jsonData
+					})
+					  .done(function( html ) { newhtml = html; });
+				
+				//}//IF checked
+					
+				$('#map-container > #html-map').fadeOut( 400, function() {	
+					$('#map-container > #html-map').html( newhtml ).fadeIn( 800 );  
+				});
+
+			});//function
+			
+
+            $("#clear-region-form").click(function() {
+                $('.region-form').trigger("reset");
+                $('.region-form ul.sub-optns').slideUp();
+                $('#map-container > #html-map').fadeOut( 300, function() {	
+					$('#map-container > #html-map').html('').fadeIn( 600 );  
+				});
+            });//function
+            
+            /* ------------------------- */
+            
+            //natural-regions
+            
+             $('.has-child-sub').click(function(e) {
+                
+                var thisbox = $(this);
+                var childul = $(this).parent().next('ul.sub-optns');
+                
+                if ( !childul.is(':visible') ){
+
+                    childul.slideDown();
+                    thisbox.prop('checked', true);
+
+                }
+                else{
+
+	                childul.slideUp();
+	                
+	                var boxes = childul.find('input:checkbox');
+	                var active = false;
+	                
+	                boxes.each(function(){
+		                if( $(this).prop('checked') ){
+			                active = true;
+			                thisbox.prop('checked', true);
+		                }
+	                });
+	                
+	                if( !active ){
+		                boxes.each(function(){
+		                	$(this).prop('checked', false);
+	                	});
+	                }
+	                                
+				}//else
+					
+            }).change();//function
+            
+            /* ----------------------------------- */
+
+/* END REGION SECTION */
+
+/* YEARS SECTION */
+
+	/*
+            $(".years").mouseover(function() {
+                if ($(".years-slide-nav").is(":hidden")) {
+                    $(".years-slide-nav").toggle();
+                    $('.years').toggleClass('filter-sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".terrestrial-slide-nav").is(":visible")) {
+                    $(".terrestrial-slide-nav").toggle();
+                    $('.terrestrial').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".wetland-slide-nav").is(":visible")) {
+                    $(".wetland-slide-nav").toggle();
+                    $('.wetland').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".region-slide-nav").is(":visible")) {
+                    $(".region-slide-nav").toggle();
+                    $('.region').removeClass('filter-sub-parent-active');              
+                } else {
+
+                }    
+
+                if ($(".data-type-slide-nav").is(":visible")) {
+                    $(".data-type-slide-nav").toggle();
+                    $('.data-type').removeClass('filter-sub-parent-active');        
+                } else {
+
+                }                   
+                                                
+            });
+			*/
+			
+            $(".yearsxx").click(function() {
+
+                $(".years-slide-nav").animate({width: 'toggle'});
+                $('.years').toggleClass('filter-sub-parent-active');
+                //$('.years').bind("mouseover");
+
+                if ($(".terrestrial-slide-nav").is(":visible")) {
+                    $(".terrestrial-slide-nav").animate({width: 'toggle'});
+                    $('.terrestrial').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".wetland-slide-nav").is(":visible")) {
+                    $(".wetland-slide-nav").animate({width: 'toggle'});
+                    $('.wetland').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".region-slide-nav").is(":visible")) {
+                    $(".region-slide-nav").animate({width: 'toggle'});
+                    $('.region').removeClass('filter-sub-parent-active');             
+                } else {
+
+                }   
+
+
+                if ($(".data-type-slide-nav").is(":visible")) {
+                    $(".data-type-slide-nav").animate({width: 'toggle'});
+                    $('.data-type').removeClass('filter-sub-parent-active');        
+                } else {
+
+                }    
+
+
+            });
+
+
+            $('#select-years').click(function() {
+                $('input[name=years]').prop('checked', true);
+                $('input[name=years]').parent().addClass('highlight', this.checked);
+
+            });
+
+
+            $('.years-form').on('change', 'input:checkbox', function() {
+                $(this).parent().toggleClass('highlight', this.checked);
+            });
+
+            $("#clear-years").click(function() {
+                $('input[name=years]').attr('checked', false);
+                $('input[name=years]').parent().removeClass('highlight', this.checked);
+            });                 
+
+
+/* END YEARS SECTION */
+
+/* DATA TYPE SECTION */
+
+/*
+            $(".data-type").mouseover(function() {
+                if ($(".data-type-slide-nav").is(":hidden")) {
+                    $(".data-type-slide-nav").toggle();
+                    $('.data-type').toggleClass('filter-sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".terrestrial-slide-nav").is(":visible")) {
+                    $(".terrestrial-slide-nav").toggle();
+                    $('.terrestrial').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".wetland-slide-nav").is(":visible")) {
+                    $(".wetland-slide-nav").toggle();
+                    $('.wetland').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".region-slide-nav").is(":visible")) {
+                    $(".region-slide-nav").toggle();
+                    $('.region').removeClass('filter-sub-parent-active');                
+                } else {
+
+                }   
+
+                if ($(".years-slide-nav").is(":visible")) {
+                    $(".years-slide-nav").toggle();
+                    $('.years').removeClass('filter-sub-parent-active');         
+                } else {
+
+                }                   
+                                                
+            });
+*/
+
+            $(".data-typexx").click(function() {
+
+                $(".data-type-slide-nav").animate({width: 'toggle'});
+                $('.data-type').toggleClass('filter-sub-parent-active');
+                //$('.data-type').bind("mouseover");
+
+                if ($(".terrestrial-slide-nav").is(":visible")) {
+                    $(".terrestrial-slide-nav").animate({width: 'toggle'});
+                    $('.terrestrial').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".wetland-slide-nav").is(":visible")) {
+                    $(".wetland-slide-nav").animate({width: 'toggle'});
+                    $('.wetland').removeClass('sub-parent-active');
+                } else {
+
+                }
+
+                if ($(".region-slide-nav").is(":visible")) {
+                    $(".region-slide-nav").animate({width: 'toggle'});
+                    $('.region').removeClass('filter-sub-parent-active');             
+                } else {
+
+                }   
+
+
+                if ($(".years-slide-nav").is(":visible")) {
+                    $(".years-slide-nav").animate({width: 'toggle'});
+                    $('.years').removeClass('filter-sub-parent-active');    
+                } else {
+
+                }                   
+
+            });
+
+
+            $('.data-type-form').on('change', 'input:checkbox', function() {
+                $(this).parent().toggleClass('highlight', this.checked);
+            });
+
+/* END DATA TYPE SECTION */
+        });

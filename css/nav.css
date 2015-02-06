@@ -1,0 +1,884 @@
+/* -----------------------------------------------------------------------
+
+ABMI Slide Navigation Menu / CSS Design File
+Version: 1.0
+Latest Update: 12/11/2014
+By: Syncopate Media
+Email: hosting@syncopatemedia.com
+
+----------------------------------------------------------------------- */
+
+
+.raw-sidenav.col-sm-3, .col-sm-3.searchbox {
+padding:0 !important;
+}
+
+.col-sm-3.raw-sidenav{
+	min-height: 725px;
+	background: #D6D4C8;
+}
+
+#rawdata-container{
+background: #D6D4C8;
+}
+
+#rawdata-content{
+	background: #F3F1DE;
+	min-height: 725px;
+}
+/* BREADCRUMBS SECTION */
+
+.raw-data-search .datacrumb  p{
+line-height: 51px;
+color: #fff;
+padding: 0 20px;
+font-size: 16px;
+}
+
+.raw-sidenav .searchbox {
+  background: #D6D4C8;
+  height: 51px;
+}
+
+.raw-data-search .datacrumb {
+  background: #262626;
+  height: 51px;
+}
+
+/* END BREADCRUMBS SECTION */
+
+/* SEARCH SECTION */
+.raw-sidenav .search {
+width:100%;
+height:51px;
+background:transparent;
+color: #424242;
+}
+
+
+.raw-sidenav .search input {
+width:80%;
+height:51px;
+float:left;
+color: #424242;
+font-size: 14px;
+border:0;
+background:transparent;
+padding:10px;
+}
+
+.raw-sidenav .search input:focus {
+background:rgba(0,0,0,0.1);
+outline: none;
+}
+
+
+::-moz-placeholder { opacity:.8; font-style: italic; color: #424242;} /* firefox 19+ */
+:-ms-input-placeholder { opacity:.8; font-style: italic; color: #424242;} /* ie */
+input:-moz-placeholder { opacity:.8; font-style: italic; color: #424242;} 
+::-webkit-input-placeholder { color:#fff; opacity:.8; font-style: italic;color: #424242;}/* all */
+
+
+body.rawdata footer {
+margin-top: 0;
+}
+
+
+.raw-sidenav .search button {
+position:relative;
+float:right;
+border:0;
+cursor:pointer;
+height:51px;
+width:20%;
+background: url(../assets/search-icon.png) no-repeat;
+background-position: center; 
+padding:0;
+}
+
+.raw-sidenav .search button:hover {
+background-color:rgba(0,0,0,0.1);
+}
+
+.raw-sidenav .search button:active, .raw-sidenav .search button:focus {
+outline: none;
+}
+
+
+/* END SEARCH SECTION */
+
+/* NAVIGATION SECTION */
+
+ 
+ 
+.raw-sidenav ul.navigation{
+/*margin-top: 250px;*/
+width: 100%;
+list-style: none;
+padding: 0;
+}
+
+
+.raw-sidenav .navigation li a {
+   /* font-size: 1vw; */
+display:block;
+padding: 0 20px;
+height:51px;
+background:#74882e;
+line-height: 51px;
+color:#fff;
+text-decoration: none;
+font-size: 1.35rem;
+
+-webkit-transition:all 0.2s linear;
+-moz-transition:all 0.2s linear;
+-o-transition:all 0.2s linear;
+transition:all 0.2s linear;
+}
+
+
+
+
+.raw-sidenav .navigation li a i{
+background: url(../assets/arrows.png) no-repeat;
+background-position: -48px 0px;
+margin-top: 12px;
+height: 25px ;
+width: 22px;
+float: right;
+}
+
+.raw-sidenav .navigationX li:hover a i {
+background-position: -28px 0px;
+}
+
+
+.raw-sidenav .navigation li:hover > a {
+text-decoration: none;
+background:#3a3a11;
+}
+
+.raw-sidenav .parent-active {
+background:#3a3a11 !important;
+}
+
+.raw-sidenav li.species-habitat-data > a, .raw-sidenav li.parent-gis-data > a{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.raw-sidenav .parent-gis-data-spacer {
+height: 51px;
+width: 100%;
+}
+
+.raw-sidenav .parent-gis-data:hover  {
+margin-bottom: 0;
+}
+
+
+.raw-sidenav .parent-gis-data:hover .gis-data {
+display: block;
+}
+
+
+.raw-sidenav .gis-data{
+	position:relative;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	display: none;
+	margin-bottom: 0;
+}
+
+.raw-sidenav .gis-data.expanded{
+	display: block;
+}
+
+.raw-sidenav .gis-data li a{
+padding: 0 20px;
+height:51px;
+background:#e2dfd0;
+line-height: 51px;
+color:#3a3a11;
+text-decoration: none;
+}
+
+.raw-sidenav .gis-data li:hover a{
+background: #808184;
+font-weight: bold;
+color: #fff;
+}
+
+.raw-sidenav .gis-data li a.active{
+font-weight: bold;
+}
+
+
+/* END NAVIGATION SECTION */
+
+
+
+/* SUB NAV */
+.raw-sidenav .slide-nav {
+position: absolute;
+left: 100%;
+top:0;
+height:100%;
+width:240px;
+display: block;
+z-index: 250;
+background: #424242;
+}
+
+.raw-sidenav .menu-child{
+	clear: both;
+	overflow: hidden;
+}
+
+.raw-sidenav .choose-data {
+background: #424242;
+height:30%;
+}
+/*
+.return {
+  position: absolute;
+  top:-100%;
+  width:100%;
+  background-color: #666;
+  font-size: 12px;
+display:block;
+padding: 0 20px;
+height:21px;
+line-height: 21px;
+color:#fff;
+
+}
+
+*/
+.raw-sidenav .navigation li .choose-data a{
+background: #424242;
+} 
+
+.raw-sidenav .navigation li:hover .choose-data a{
+background: #424242;
+} 
+
+.raw-sidenav .filter-by {
+background: #595a5c;
+height:50%;
+}
+
+.raw-sidenav .navigation li .filter-by a{
+background: #595a5c;
+} 
+
+.raw-sidenav .navigation li:hover .filter-by a{
+background: #595a5c;
+} 
+
+.raw-sidenav .choose-data ul {
+list-style: none;
+padding: 0;
+}
+
+.raw-sidenav .select, .raw-sidenav .btn-gray {
+margin: 5px 0;
+border: 2px solid #fff;
+background: #808184;
+color: #FFFFFF;
+}
+
+
+.raw-sidenav .choose-data ul li a{
+    font-size: 12px;
+display:block;
+background:#545454;
+padding: 0 20px;
+height:31px;
+line-height: 31px;
+color:#fff;
+
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+}
+
+.raw-sidenav .navigation li .choose-data ul li:hover a {
+background:#545454;
+}
+
+.raw-sidenav .navigation li:hover .choose-data ul li:hover a {
+background:#545454;
+}
+
+.raw-sidenav .sub-parent-active {
+background:#545454 !important;
+}
+
+.raw-sidenav .filter-sub-parent-active {
+background:#68696b !important;
+}
+
+
+.raw-sidenav .filter-by ul {
+list-style: none;
+padding: 0;
+}
+
+.raw-sidenav .filter-by ul li a{
+    font-size: 12px;
+display:block;
+background:#545454;
+padding: 0 20px;
+height:31px;
+line-height: 31px;
+color:#fff;
+
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+}
+
+.raw-sidenav .navigation li .filter-by ul li a:hover {
+background:#68696b;
+}
+
+.raw-sidenav .navigation li:hover .filter-by ul li a:hover {
+
+background:#68696b;
+
+}
+
+.raw-sidenav .sub-slide-nav {
+position: absolute;
+left: 100%;
+min-height:100%;
+width:260px;
+background: #808184;
+z-index: 500;
+top: 0;
+}
+
+.raw-sidenav .terrestrial-slide-nav.sub-slide-nav{
+z-index: 1000;	
+}
+
+.raw-sidenav .wetland-slide-nav.sub-slide-nav{
+z-index: 1100;	
+}
+
+.raw-sidenav .region-slide-nav.sub-slide-nav{
+z-index: 1200;	
+}
+
+.raw-sidenav .years-slide-nav.sub-slide-nav{
+z-index: 1300;	
+}
+
+.raw-sidenav .data-type-slide-nav.sub-slide-nav{
+z-index: 1400;	
+}
+
+
+
+
+
+.raw-sidenav .sub-slide-nav ul {
+  /*padding: 9px 3px;*/
+}
+
+.raw-sidenav .sub-slide-nav ul li{
+  margin: 5px 10px;
+
+}
+
+.liTitle{
+background: #595a5c;
+color: #ffffff;
+margin: 0 0 0.7em 0!important;
+padding: 0.75em 1.3em;
+}
+
+
+.liTitle.secondTitle{
+margin-top: 1em!important;
+}
+
+.raw-sidenav .sub-optns {
+padding-left: 5px;
+}
+
+.raw-sidenav .sub-expand-title{
+padding-right: 6px;
+}
+
+
+.raw-sidenav .sub-slide-nav ul.sub-optns{
+padding-top: 3px;
+}
+
+
+.raw-sidenav .sub-slide-nav ul.sub-optns li {
+margin: 2px 10px;
+line-height: 1rem;
+}
+
+div.region-slide-nav.sub-slide-nav .region-form, div.years-slide-nav.sub-slide-nav .years-form, div.data-type-slide-nav.sub-slide-nav .data-type-form{
+overflow-x: hidden;
+overflow-y: auto;
+max-height: 670px;
+padding-top: 10px;
+}
+
+
+.raw-sidenav .highlight {
+  font-weight: bold !important;
+
+    -webkit-transition:all 0.2s ease-out;
+    -moz-transition:all 0.2s ease-out;
+    -o-transition:all 0.2s ease-out;
+    transition:all 0.2s ease-out; 
+}
+
+
+#map-container{
+position: absolute;
+left: 208%;
+min-height: 100%;
+width: 400px;
+background: #ffffff;
+z-index: 1;
+top: 0;
+overflow: hidden;
+padding: 10px 40px 20px 40px;
+}
+
+#rawdata-content{
+padding: 30px;
+color: #424242; 
+font-size: 14px;
+}
+
+#rawdata-content.white-page{
+	background: #ffffff;
+}
+
+#rawdata-content h2{
+color: #595A5C;	
+font-size: 30px;
+padding: 0 0 20px;
+}
+
+#rawdata-content h3 {
+font-size: 1.35em;
+margin: 1.5em 0 0.5em;
+}
+
+#rawdata-content h4{
+color: #74882E;	
+font-size: 24px;
+padding: 0 0 10px;
+font-weight: 300;
+}
+
+#rawdata-content p{
+font-size: 16px;
+font-size: 1.14em;
+font-weight: 400;
+line-height: 1.7em;
+color: #595A5C;
+}
+
+#rawdata-content a.button.teal-download {
+font-size: 0.9em;
+line-height: 1.1em;
+margin: 0;
+width: auto;
+color: #ffffff;
+background: #8BB0A3;
+padding: 0.8em 2.5em 0.8em;
+min-height: 20px;
+}
+
+
+
+#rawdata-content .col-md-5 > img{
+margin-top: 2.5em;
+}
+
+/* END SUB NAV */    
+
+/* ARROWS */
+.raw-sidenav .arrow {
+background: url(../assets/arrows.png) no-repeat;
+background-position: -48px 0px;
+margin-top: 12px;
+height: 25px ;
+width: 22px;
+float: right;
+}
+
+.raw-sidenav .arrow-small {
+background: url(../assets/arrows_small.png) no-repeat;
+background-position: -30px 0px;
+margin-top: -18px;
+margin-left:87%; 
+height: 16px ;
+width: 14px;
+float: right;
+}
+
+.raw-sidenav .arrow-xsmall {
+background: url(../assets/arrows_xsmall.png) no-repeat;
+background-position: -27px 0px;
+margin-top: -18px;
+margin-left:77%; 
+height: 13px ;
+width: 14px;
+float: right;
+opacity: 0.6;
+}
+/* END ARROWS */
+
+
+
+
+
+
+/* BUTTONS */
+
+.raw-sidenav .buttons-box {
+  width: 100%;
+margin: 0 10%;
+position: absolute;
+bottom:10px;
+}
+
+.raw-sidenav .button {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 5px 40px;
+  width: 80%;
+  text-align: center;
+
+      -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+}
+
+
+
+a.download-button {
+	border: 2px solid transparent;
+	margin: 1em 10%  0 10%;
+	background: none repeat scroll 0 0 #74882e!important;
+	color: #FFFFFF!important;
+	height: 35px!important;
+	line-height: 2.5em!important;
+	font-size: 1.25rem!important;
+	text-align: center;
+}
+
+a.download-button:hover {
+  border: 2px solid #74882e!important;
+  background: transparent!important;
+  color: #74882e!important;
+}
+
+
+.raw-sidenav #get-data-btn {
+  border: 2px solid transparent;
+  margin: 0 10%  0 10%;
+  background: none repeat scroll 0 0 #8bb0a3;
+  color: #FFFFFF;
+
+}
+
+.raw-sidenav #get-data-btn:hover{
+  border: 2px solid #8bb0a3;
+  background: transparent;
+  color: #8bb0a3;
+}
+
+
+
+.raw-sidenav .select, .raw-sidenav .clear {
+  margin:5px 0;
+  border: 2px solid #fff;
+
+  background: transparent;
+  color: #FFFFFF;
+
+}
+
+.raw-sidenav .select:hover, .raw-sidenav .clear:hover {
+  border: 2px solid transparent;
+  background: #fff;
+  color: #808184;
+}
+
+.raw-sidenav .accept {
+  margin:5px 0;
+  border: 2px solid transparent;
+  background: none repeat scroll 0 0 #fff;
+  color: #808184;
+
+}
+
+
+
+.raw-sidenav .accept:hover {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+/* END BUTTONS */
+
+
+
+/* RADIO AND CHECKBOX DESIGN */
+
+.raw-sidenav .radio-item {
+  color:#fff;
+  display: inline-block;
+  font-size: 14px;
+font-weight: normal;
+  cursor: pointer;
+}
+
+.raw-sidenav .text-align {
+margin-left: 40px;
+}
+
+.raw-sidenav .sub-radio-item {
+	color:#fff;
+	display: inline-block;
+	font-size: 13px;
+	line-height: 17px;
+	font-weight: lighter;
+	cursor: pointer;
+	font-style: italic;
+
+}
+
+.raw-sidenav .radio-item:hover .outer, .raw-sidenav .sub-radio-item:hover .outer {
+background-color:#e0e0e0;
+}
+
+
+.raw-sidenav .radio-item input[type="radio"], .raw-sidenav .sub-radio-item input[type="radio"],
+.raw-sidenav .radio-item input[type="checkbox"], .raw-sidenav .sub-radio-item input[type="checkbox"] {
+visibility:hidden;
+}
+.raw-sidenav .radio-item input[type="radio"]:checked + .outer .inner, .raw-sidenav .sub-radio-item input[type="radio"]:checked + .outer .inner, 
+.raw-sidenav .radio-item input[type="checkbox"]:checked + .outer .inner, .raw-sidenav .sub-radio-item input[type="checkbox"]:checked + .outer .inner {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.raw-sidenav .radio-item input[type="radio"]:focus + .outer .inner, .raw-sidenav .sub-radio-item input[type="radio"]:focus + .outer .inner,
+.raw-sidenav .radio-item input[type="checkbox"]:focus + .outer .inner, .raw-sidenav .sub-radio-item input[type="checkbox"]:focus + .outer .inner {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background-color: #262626;
+}
+.raw-sidenav .radio-item .outer, .raw-sidenav .sub-radio-item .outer {
+  height: 13px;
+  width: 13px;
+  display: block;
+  float: left;
+  margin: 6px 0 0 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.raw-sidenav .radio-item .inner, .raw-sidenav .sub-radio-item .inner {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  height: 9px;
+  width: 9px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  display: block;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: #262626;
+  opacity: 0;
+}
+
+/* END RADIO DESIGN */
+
+#html-map{
+height: 330px;
+overflow: hidden;
+padding: 25px;
+}
+
+#async-map-details{
+	height: 230px;
+	overflow-y: auto;
+	margin-bottom: 10px;
+	padding: 2px 10px 5px 0;
+	
+}
+
+#map-container h4{
+	color: #74882E;
+	font-size: 18px;
+	
+}
+
+#async-map-details p{
+color: #595A5c;
+font-size: 13px;
+line-height: 19px;
+margin-bottom: 7px;		
+}
+
+#async-map-details p span.noselect{
+font-size: 0.9em;
+font-style: italic;
+color: #9D9FA5;
+}
+
+
+@media (max-width: 1024px) {
+
+	.raw-sidenav .navigation > li > a, .raw-sidenav .gis-data li a {
+	font-size: 1.6vw;
+	
+	}
+	
+	.raw-sidenav .slide-nav {
+	width:210px;
+	}
+	
+	.raw-sidenav .sub-slide-nav {
+	width:230px;
+	}
+	
+	.raw-sidenav .radio-item {
+	  font-size: 13px;
+	}
+	
+	.raw-sidenav .sub-radio-item {
+	  font-size: 13px;
+	}
+	
+	
+	.raw-sidenav .radio-item .outer, .raw-sidenav .sub-radio-item .outer {
+	  height: 11px;
+	  width: 11px;
+	  margin: 7px -7px 0 10px;
+	}
+	
+	.raw-sidenav .text-align {
+	margin-left: 31px;
+	}
+	
+	.raw-sidenav .radio-item .inner, .raw-sidenav .sub-radio-item .inner {
+	  height: 7px;
+	  width: 7px;
+	}
+
+
+}
+
+@media (max-width: 800px) {
+
+	.raw-sidenav .navigation > li > a, .raw-sidenav .gis-data li a {
+	font-size: 1.8vw;
+	}
+	
+	.raw-data-search .search input {
+	font-size: 13px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.raw-sidenav .navigation > li > a, .raw-sidenav .gis-data li a {
+	font-size: 2.6vw;
+	}
+}
+
+@media (max-width: 700px) {
+
+	.raw-sidenav .navigation > li > a, .raw-sidenav .gis-data li a {
+	font-size: 3vw;
+	}
+	
+	.raw-data-search .search input {
+	padding:10px;
+	padding-left: 20px;
+	}
+
+}
+
+@media (max-width: 400px) {
+	.raw-sidenav .navigation > li > a, .raw-sidenav .gis-data li a {
+	font-size: 4vw;
+	}
+	
+	.raw-sidenav .slide-nav {
+	left: 0%;
+	width: 100%;
+	position: relative;
+	}
+	
+	.raw-sidenav .choose-data, .filter-by {
+	min-height: 150px;
+	height: auto;
+	padding-bottom: 5px;
+	}
+	
+	.raw-sidenav .get-data {
+	position: relative;
+	padding-bottom: 10px;
+	margin: 20px 10%; 
+	}
+	
+	.raw-sidenav .sub-slide-nav {
+	left: 0%;
+	width: 100%;
+	position: relative;
+	height: auto;
+	margin-bottom: 20px;
+	}
+	
+	.raw-sidenav .sub-slide-nav > ul{
+	width: 100%;
+	}
+	
+	.raw-sidenav .radio-item, .raw-sidenav .sub-radio-item {
+	  font-size: 15px;
+	}
+	
+	
+	
+	.raw-sidenav .buttons-box {
+	  margin-top: 20px;
+	position: relative;
+	}
+}
+
+@media (max-width: 300px) {
+
+	.raw-sidenav .navigation > li > a, .raw-sidenav .gis-data li a {
+	font-size: 5vw;
+	}
+
+}

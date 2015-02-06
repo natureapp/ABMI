@@ -1,0 +1,64 @@
+
+/************************************
+------------STRUCTURE----------------
+************************************/
+body{color:#eee;background:#222;}
+#header_wrapper{
+	position:relative;
+	text-align:center;
+	width:100%;
+	height:100px;
+	overflow:visible;
+	background:#222 url(../img/bg1.png) repeat-x;
+}
+
+
+#header_wrapperbg{
+	position:absolute;
+	top:0px;
+	left:0px;
+	
+}
+#header
+{
+	position:relative;
+	width:1010px;
+	margin:auto;
+	text-align:left;
+
+}
+
+#content_wrapper{
+	position:relative;
+	background:#111 url(img/bg2.png) repeat-x;
+	padding:10px 0 10px 0;
+	text-align:center;
+}
+#content
+{
+
+	width:1010px;
+	margin:auto;
+	text-align:left;
+}
+.example_block{
+	width:500px;
+	text-align:center;
+}
+code {
+	background: #333334 top left;
+	display:block;padding:0 20px 0 20px;
+	line-height:20px;
+	border:1px solid #575757;
+	font-size:11px;
+	clear:both;	
+	padding:5px 5px 5px 5px;
+	margin: 10px 0 10px 0;
+}
+.example_img{
+	
+}
+hr{
+	background:#555;color:#aad;clear:both;float:none;width:100%;height:1px;border:none;
+	margin-bottom:10px;
+}
