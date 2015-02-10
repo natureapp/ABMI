@@ -1951,8 +1951,11 @@ a.readmore-link{
 	font-family: "Roboto Slab", serif;
 	font-size:15px;
 }
-.event-post .single-post-links a{
+.event-post .single-post-links a, .publication-post .single-post-links a{
 	background:#98BCB2;
+}
+.publication-post ul.faq.supplementary{
+	margin-top:30px;
 }
 .news-post .single-post-links a{
 	background:#8B1B1D;
