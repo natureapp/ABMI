@@ -1,0 +1,28 @@
+<link href="css/zoomwizard.min.css" rel="stylesheet">
+
+<div class="ajax-map-image">
+	<img src="assets/rawdata-map-small-5.jpg" alt="maps are good" class="zoomwizard" />
+	<img src="assets/rawdata-map-full-5.jpg" alt="maps are good" class="zoomwizard-large" />
+	
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.zoomwizard.min.js"></script>
+
+<script>
+jQuery( document ).ready(function( $ ) {
+	
+	console.log('loaded');
+	
+		jQuery('.zoomwizard').zoomwizard({ mode: 'window', windowstyle: 1, width: 300, height: 300, hidecursor: false, zoom: 4 });
+
+});
+</script>
+
+<style>
+.zoomwizard-window.zoomwizard-windowstyle-1{ -webkit-border-radius: 150px; -moz-border-radius: 150px; border-radius: 150px;}	
+.ajax-map-image{ width: 252px; margin-left: auto; margin-right: auto; margin-top: 3em;}
+</style>
+
+
+
