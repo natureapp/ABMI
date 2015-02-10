@@ -1951,8 +1951,11 @@ a.readmore-link{
 	font-family: "Roboto Slab", serif;
 	font-size:15px;
 }
-.event-post .single-post-links a, .publication-post .single-post-links a{
+.event-post .single-post-links a{
 	background:#98BCB2;
+}
+.publication-post .single-post-links a{
+	background:#74882E;
 }
 .publication-post ul.faq.supplementary{
 	margin-top:30px;
@@ -1973,7 +1976,7 @@ body.news-page .row-fluid.breadcrumb-triangle .triangle, body.news-page .row.bre
 	border-color: #8B1B1D transparent transparent transparent;
 }
 .postactions .at4-icon{
-	background-color: #74882E !important;
+	background-color: #BB6B0C !important;
 	border-radius: 100%;
 }
 /* =================================== */
