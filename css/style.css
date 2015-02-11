@@ -2803,6 +2803,9 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		padding: 0px;
 		margin: 0px;
 	}
+	.navbar-collapse.in ul.list-unstyled li a {
+		padding-left: 3.5em;
+	}
 /* ----------- */	
 }/* END MAX WIDTH 1999 MQ ------- */
 
