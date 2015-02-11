@@ -2013,6 +2013,9 @@ body.news-page .row-fluid.breadcrumb-triangle .triangle, body.news-page .row.bre
        color: #8B1B1D;
        font-family: "Roboto Slab",serif;
 }
+.post-pdf{
+	
+}
 /* =================================== */
 /* ------------- FOOTER -------------- */
 
@@ -2726,7 +2729,9 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		float: none !important;}
 	
 	.navbar-nav > li {
-		float: none;}
+		float: none;
+		display: inline-block;
+		width: 100%;}
 	
 	.navbar-nav > li > a {
 		padding-top: 10px;
