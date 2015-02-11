@@ -42,7 +42,7 @@ body.light-bg {
 
 .search div {
 	background-color: #677523;
-	background: url(/docroot/assets/search.png) no-repeat center right 15px #677523;
+	background: url(../assets/search.png) no-repeat center right 15px #677523;
 	top: 35px;
 	width: 65px;
 	height: 65px;
@@ -195,10 +195,10 @@ html body #LiveCSSEditor-code{
 	background-color: #74882e;}
 
 .explore {
-	background: url(/docroot/assets/parkridge_banff.jpg) no-repeat center top;
+	background: url(../assets/parkridge_banff.jpg) no-repeat center top;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/docroot/assets/parkridge_banff.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/docroot/assets/parkridge_banff.jpg', sizingMethod='scale')";}
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/parkridge_banff.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/parkridge_banff.jpg', sizingMethod='scale')";}
 
 .triangle {
 	width: 0;
@@ -661,16 +661,16 @@ body a.btn-learn.sidebar-btn{
 	margin: 60px 0 25px;}
 
 .ai {
-	background: url(/docroot/assets/partner_ai-logo.png) no-repeat center center;}
+	background: url(../assets/partner_ai-logo.png) no-repeat center center;}
 
 .ram {
-	background: url(/docroot/assets/partner_ram-logo.png) no-repeat center center;}
+	background: url(../assets/partner_ram-logo.png) no-repeat center center;}
 
 .uoc {
-	background: url(/docroot/assets/partner_uoc-logo.png) no-repeat center center;}
+	background: url(../assets/partner_uoc-logo.png) no-repeat center center;}
 
 .uoa {
-	background: url(/docroot/assets/partner_uoa-logo.png) no-repeat center center;}
+	background: url(../assets/partner_uoa-logo.png) no-repeat center center;}
 
 .input-group {
 /* blocked by joan	float: left;*/
@@ -734,13 +734,13 @@ body a.btn-learn.sidebar-btn{
 	width: 45px;}
 
 .aside .connect a.twitter {
-	background: url(/docroot/assets/asidetwitter.png) no-repeat center center #74872d;}
+	background: url(../assets/asidetwitter.png) no-repeat center center #74872d;}
 
 .aside .connect a.facebook {
-	background: url(/docroot/assets/asidefacebook.png) no-repeat center center #74872d;}
+	background: url(../assets/asidefacebook.png) no-repeat center center #74872d;}
 
 .aside .connect a.vimeo {
-	background: url(/docroot/assets/asidevimeo.png) no-repeat center center #74872d;}
+	background: url(../assets/asidevimeo.png) no-repeat center center #74872d;}
 
 .aside .connect a:hover {
 	background-color: #6e7e2c;}
@@ -812,7 +812,7 @@ body a.btn-learn.sidebar-btn{
 	position: fixed;
 	top: 38%;
 	left: 0;
-	background: url('/docroot/assets/social.png') no-repeat top left;
+	background: url('../assets/social.png') no-repeat top left;
 	width: 90px;
 	height: 45px;}
 
@@ -841,37 +841,37 @@ body a.btn-learn.sidebar-btn{
 /* --------- PAGE HEADER BACKGROUND ------------------------ */
 
 .applied-research-projects .jumbotron {
-	background: url(/docroot/assets/appliedresearchprojects.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/appliedresearchprojects.jpg) no-repeat top center, #3a3a11;}
 
 .land-access .jumbotron{
-	background: url(/docroot/assets/landaccesstitle.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/landaccesstitle.jpg) no-repeat top center, #3a3a11;}
 
 .board-of-directors .jumbotron {
-	background: url(/docroot/assets/boardofdirectorstitle.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/boardofdirectorstitle.jpg) no-repeat top center, #3a3a11;}
 
 .careers .jumbotron {
-	background: url(/docroot/assets/careers.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/careers.jpg) no-repeat top center, #3a3a11;}
 
 .publications .jumbotron {
-	background: url(/docroot/assets/publicationstitle.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/publicationstitle.jpg) no-repeat top center, #3a3a11;}
 
 .monitoring-cycle .jumbotron {
-	background: url(/docroot/assets/monitoringcycle-title.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/monitoringcycle-title.jpg) no-repeat top center, #3a3a11;}
 
 .partners .jumbotron {
-	background: url(/docroot/assets/partners.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/partners.jpg) no-repeat top center, #3a3a11;}
 
 .sponsors .jumbotron {
-	background: url(/docroot/assets/partners.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/partners.jpg) no-repeat top center, #3a3a11;}
 
 .taxonomy .jumbotron {
-	background: url(/docroot/assets/taxonomy.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/taxonomy.jpg) no-repeat top center, #3a3a11;}
 
 .science-projects .jumbotron {
-	background: url(/docroot/assets/case-study.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/case-study.jpg) no-repeat top center, #3a3a11;}
 
 .events-page .jumbotron {
-	background: url(/docroot/assets/events-background.jpg) no-repeat top center, #3a3a11;}
+	background: url(../assets/events-background.jpg) no-repeat top center, #3a3a11;}
 
 /* --------------------------------- */
 
@@ -955,7 +955,7 @@ body.events-page .row-fluid.breadcrumb-triangle .triangle,body.events-page .row.
 	
 .faq input[type="button"], .sidemenu-nav-expand input[type="button"] {
 	-webkit-appearance: none;
-	background: transparent url('/docroot/assets/collapsed-minus.png') no-repeat left center;	
+	background: transparent url('../assets/collapsed-minus.png') no-repeat left center;	
 	line-height: 22px;
 	color: #313436;
 	border: none;
@@ -966,7 +966,7 @@ body.events-page .row-fluid.breadcrumb-triangle .triangle,body.events-page .row.
 	
 .sidemenu-nav-expand input[type="button"] {
 	font-family: "Roboto Slab", serif;
-	background: transparent url('/docroot/assets/collapsed-minus.png') no-repeat right center;
+	background: transparent url('../assets/collapsed-minus.png') no-repeat right center;
 	font-weight: normal;	
 	font-size: 24px;
 	padding: 15px 35px 17px 0;
@@ -994,11 +994,11 @@ body.events-page .row-fluid.breadcrumb-triangle .triangle,body.events-page .row.
 }
 
 .faq input[type="button"].collapsed {
-	background: transparent url('/docroot/assets/collapsed-plus.png') no-repeat left center;	
+	background: transparent url('../assets/collapsed-plus.png') no-repeat left center;	
 	font-weight: normal;}
 	
 .sidemenu-nav-expand input[type="button"].collapsed {
-	background: transparent url('/docroot/assets/collapsed-plus.png') no-repeat right center;	
+	background: transparent url('../assets/collapsed-plus.png') no-repeat right center;	
 	text-align: right;	
 	font-weight: normal;
 	color: #74882E;}
@@ -1105,7 +1105,7 @@ a.zoom.fullzoom{
 	padding-left:10px;
 }
 .postactions a.pdf:before {
-	content: url('/docroot/assets/pdf-icon.png') !important;
+	content: url('../assets/pdf-icon.png') !important;
 	padding: 4px 10px 0px !important;
 	vertical-align: middle;
 	display: inline-block;
@@ -1146,7 +1146,7 @@ a.zoom.fullzoom{
 	color: #6F7F2D;}
 
 .sidemenu ul li.active {
-	list-style-image: url('/docroot/assets/sidemenu-active.png');}
+	list-style-image: url('../assets/sidemenu-active.png');}
 
 .sidemenu ul li.active a {
 	color: #74882E;}
@@ -1157,7 +1157,7 @@ a.zoom.fullzoom{
 	}
 
 .sidemenu > ul > li a.pdf:before, .list.widget > ul > li a.pdf:before{
-	content: url('/docroot/assets/pdf-black.png');
+	content: url('../assets/pdf-black.png');
 	padding: 0.6em;}
 
 .sidemenuSearch::-webkit-input-placeholder { color: #414042;}
@@ -1182,12 +1182,12 @@ input.sidemenuSearch{
 button.sidemenuSearchBtn{
 	width: 52px;
 	height: 52px;
-	background: url('/docroot/assets/sidemenuSearchBtn.png'), #677523;
+	background: url('../assets/sidemenuSearchBtn.png'), #677523;
 	border: none;
 	vertical-align: top;}
 
 button.sidemenuSearchBtn:hover{ 
-	background: url('/docroot/assets/sidemenuSearchBtn.png'), 637051;}
+	background: url('../assets/sidemenuSearchBtn.png'), 637051;}
 
 .widget.searchbox{
 	/*margin-bottom: 3em;*/
@@ -1206,22 +1206,22 @@ a.sidemenuFullPostBtn, a.sidemenuListPostBtn, a.sidemenuEventPostBtn{
 	margin-bottom: 1.3em;}
 
 a.sidemenuFullPostBtn{
-	background: url('/docroot/assets/sidemenu-full.png') top left, #748838;}
+	background: url('../assets/sidemenu-full.png') top left, #748838;}
 
 a.sidemenuFullPostBtn.active{
-	background: url('/docroot/assets/sidemenu-full-active.png') top left, #313436;}
+	background: url('../assets/sidemenu-full-active.png') top left, #313436;}
 
 a.sidemenuListPostBtn{
-	background: url('/docroot/assets/sidemenu-list.png') top left, #748838;}
+	background: url('../assets/sidemenu-list.png') top left, #748838;}
 
 a.sidemenuListPostBtn.active{
-	background: url('/docroot/assets/sidemenu-list-active.png') top left, #313436;}
+	background: url('../assets/sidemenu-list-active.png') top left, #313436;}
 	
 a.sidemenuEventPostBtn{
-	background: url('/docroot/assets/sidemenu-events.png') top left;}
+	background: url('../assets/sidemenu-events.png') top left;}
 
 a.sidemenuEventPostBtn.active{
-	background: url('/docroot/assets/sidemenu-events-active.png') top left;}
+	background: url('../assets/sidemenu-events-active.png') top left;}
 
 .widget.listSyle{ margin-bottom: 1.2em; }
 
@@ -1376,7 +1376,7 @@ a.btn.btn-learn {
 	width: 189px;}
 
 a.btn.btn-learn.pdf,  a.btn.btn-learn.pdf:hover,  a.btn.btn-learn.pdf:active {
-	background-image: url('/docroot/assets/pdf.png');
+	background-image: url('../assets/pdf.png');
 	background-repeat: no-repeat;
 	background-position: 20px center;
 	padding-left: 55px;}
@@ -1400,7 +1400,7 @@ img {
 	line-height: 2.1em;}
 
 .main p > a.pdf:before {
-	content: url('/docroot/assets/pdf-orange.png');
+	content: url('../assets/pdf-orange.png');
 	padding: 0.6em;}
 
 div.col-sm-6.col-xs-12 div.logo-heading{
@@ -1636,10 +1636,10 @@ div.arrowcontainer .postmeta.arrow{ display: none; visibility: hidden;}
 	margin: 0 5px;}
 
 .postactions a.twitter {
-	background-image: url('/docroot/assets/asidetwitter.png');}
+	background-image: url('../assets/asidetwitter.png');}
 
 .postactions a.facebook {
-	background-image: url('/docroot/assets/asidefacebook.png');}
+	background-image: url('../assets/asidefacebook.png');}
 
 .postactions a:hover {
 	color: #AD610E;}
@@ -1714,7 +1714,7 @@ p.tags a:hover, p.tags a:active {
 	padding-right: 0;}
 
 div.photo-box-share .addthis_20x20_style .at300bs{
-	background: url(/docroot/assets/social-abmi.png) no-repeat left;}
+	background: url(../assets/social-abmi.png) no-repeat left;}
 
 div.photo-box-share .addthis_20x20_style .at300bs, div.post-box-share .addthis_20x20_style .at300bs{
 	height: 25px !important;
@@ -1737,7 +1737,7 @@ div.photo-box-share .addthis_20x20_style .at15nc.at15t_compact, .post-box-share.
 	background-position: 0 -100px !important;}
 
 div.post-box-share .addthis_20x20_style .at300bs{
-	background: url(/docroot/assets/social-orange-abmi.png) no-repeat left;}
+	background: url(../assets/social-orange-abmi.png) no-repeat left;}
 .at-share-tbx-element .at-share-btn {
 	margin: 0px 3px !important;
 }
@@ -1772,7 +1772,7 @@ div.post-box-share .addthis_20x20_style .at300bs{
 .backtoallBtn{
 	background-color: #74882E;
 	color: #F3F1DE !Important;
-	background-image: url(/docroot/assets/back-arrow.png);
+	background-image: url(../assets/back-arrow.png);
 	background-repeat: no-repeat;
 	padding: 8px 24px 7px 55px;
 	background-position: 23px center;
@@ -2113,9 +2113,9 @@ img.hard35_7p, .carousel-inner > .item > a > img.hard35_7p{
 /* ---------------------- */
 /* ZOOM ZOOM */
 
-.smooth_zoom_preloader { background-image: url("/docroot/assets/zoom_assets/preloader.gif"); }	
+.smooth_zoom_preloader { background-image: url("../assets/zoom_assets/preloader.gif"); }	
 
-.smooth_zoom_icons { background-image: url("/docroot/assets/zoom_assets/icons.png"); }
+.smooth_zoom_icons { background-image: url("../assets/zoom_assets/icons.png"); }
 
 img.imageZoom { max-width: none !important; }
 
@@ -2156,8 +2156,8 @@ div.zoomImageBox{ margin-bottom: 2em; }
 	
 	.jumbotron {
 		min-height: 280px;
-		background-image: url("/docroot/assets/grasslands_video.jpg");
-		background: url(/docroot/assets/grasslands_video.jpg) no-repeat top center, #3a3a11;}	
+		background-image: url("../assets/grasslands_video.jpg");
+		background: url(../assets/grasslands_video.jpg) no-repeat top center, #3a3a11;}	
 	
 	.jumbotron h1 {
 		font-size: 4.2em;}
