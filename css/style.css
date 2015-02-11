@@ -28,7 +28,7 @@ body.light-bg {
 	height: 100%;
 	width: 100%; 
 	transition: .3s; 
-	background: url(/docroot/assets/abmi_logo.png) no-repeat center center #677523;}
+	background: url(../assets/abmi_logo.png) no-repeat center center #677523;}
 
 .logo a:hover {
 	background-color: #626B22;}
@@ -2205,7 +2205,7 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		width: 67px;}
 	
 	.logo a {
-		background: url(/docroot/assets/abmi_logo75.png) no-repeat center center #677523;}
+		background: url(../assets/abmi_logo75.png) no-repeat center center #677523;}
 	
 	.navbar-toggle {
 		padding: 14px 16px;}
@@ -2493,7 +2493,7 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		width: 75px;}
 	
 	.logo a {
-		background: url(/docroot/assets/abmi_logo75.png) no-repeat center center #677523;}
+		background: url(../assets/abmi_logo75.png) no-repeat center center #677523;}
 	
 	a.oneLine{
 		line-height: 250%;}
