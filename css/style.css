@@ -528,7 +528,8 @@ p {
 	color: #a6a8ab;
 	font-size: 1.4em;
 	line-height: 1.8em;
-	padding: 0 0 0px 45px;}
+	padding: 0 0 0px 45px;
+	margin-bottom: 0px;}
 
 a.button {
 	background-color: #74882e;
@@ -1995,6 +1996,18 @@ body.news-page .row-fluid.breadcrumb-triangle .triangle, body.news-page .row.bre
 	background-color: #BB6B0C !important;
  	border-radius: 100%;
  }
+ .publication-post h4 a {
+       color:#74882E;
+       font-family: "Roboto Slab",serif;
+}
+.event-post h4 a {
+       color: #98BCB2;
+       font-family: "Roboto Slab",serif;
+}
+.news-post h4 a {
+       color: #8B1B1D;
+       font-family: "Roboto Slab",serif;
+}
 /* =================================== */
 /* ------------- FOOTER -------------- */
 
@@ -2285,7 +2298,7 @@ div.zoomImageBox{ margin-bottom: 2em; }
 	
 	p, li {
 		font-size: 1.4rem;
-		line-height: 1.5em;}
+		line-height: 1.9em;}
 	
 	.spotlight .overlay h3 {
 		font-size: 2.7em;
