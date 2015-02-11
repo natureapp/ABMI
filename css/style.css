@@ -707,13 +707,13 @@ body a.btn-learn.sidebar-btn{
 	width: 37px;}
 
 .connect a.twitter {
-	background: url(/docroot/assets/twitter.png) no-repeat center center #a6a8ab;}
+	background: url(../assets/twitter.png) no-repeat center center #a6a8ab;}
 
 .connect a.facebook {
-	background: url(/docroot/assets/facebook.png) no-repeat center center #a6a8ab;}
+	background: url(../assets/facebook.png) no-repeat center center #a6a8ab;}
 
 .connect a.vimeo {
-	background: url(/docroot/assets/vimeo.png) no-repeat center center #a6a8ab;}
+	background: url(../assets/vimeo.png) no-repeat center center #a6a8ab;}
 
 .connect a:hover {
 	background-color: #9ea0a4;}
@@ -2592,7 +2592,7 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		visibility: visible;}	
 	
 	.logo a {
-		background: url(/docroot/assets/abmi_logo.png) no-repeat center center #677523;}
+		background: url(../assets/abmi_logo.png) no-repeat center center #677523;}
 	
 	.logo {
 		height: 100px;
