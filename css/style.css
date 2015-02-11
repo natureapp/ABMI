@@ -2743,7 +2743,10 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		left: auto;
 		right: auto;
 		padding: 0;
-		width: 100% !important;}
+		width: 100% !important;
+		position: relative;
+		box-shadow: none;
+		border-radius: 0px;}
 	
 	.navbar-right .dropdown-menu .row {
 		width: auto;}
@@ -2794,6 +2797,11 @@ div.zoomImageBox{ margin-bottom: 2em; }
 	}
 	.navbar-nav.navbar-right:last-child{
 		margin-right:0px;
+	}
+	.dropdown-menu .list-unstyled {
+		max-width: 100%;
+		padding: 0px;
+		margin: 0px;
 	}
 /* ----------- */	
 }/* END MAX WIDTH 1999 MQ ------- */
