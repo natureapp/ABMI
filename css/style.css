@@ -2796,6 +2796,9 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		margin-right: 0;
 		margin-left: 0;
 	}
+	.navbar-nav.navbar-right:last-child{
+		margin-right:0px;
+	}
 /* ----------- */	
 }/* END MAX WIDTH 1999 MQ ------- */
 
