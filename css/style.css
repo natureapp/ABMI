@@ -158,7 +158,11 @@ html body #LiveCSSEditor-code{
 	background-color: rgba(222, 219, 204, 0.9);
 	border: none;
 	color: #282b2d;}
-
+.navbar-collapse.in .search-collapse input::-webkit-input-placeholder, 
+.navbar-collapse.in .search-collapse input:-moz-placeholder, 
+.navbar-collapse.in .search-collapse input::-moz-placeholder,
+.navbar-collapse.in .search-collapse input:-ms-input-placeholder{
+	color:rgba(140, 138, 126, 1)}
 .navbar-collapse.in .search-collapse{
 	margin: 0;
 	position: relative;
