@@ -674,6 +674,7 @@ body a.btn-learn.sidebar-btn{
 	vertical-align: middle;
 	display: table-cell;
 }
+
 .ai {
 	background: url(../assets/partner_ai-logo.png) no-repeat center center;}
 
@@ -2907,6 +2908,9 @@ margin-bottom:1em; /*added by joan */
 	.post-feature-img {
 		float: none;
 		padding: 15px 0px 0px 15px;}
+	.home .partner, .home .partner a{
+		display: block;
+	}
 }
 @media (max-width:1199px){
 	.aside ul.sidemenu-nav-expand {
