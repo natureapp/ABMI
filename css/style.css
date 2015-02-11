@@ -661,7 +661,10 @@ body a.btn-learn.sidebar-btn{
 .partner {
 	height: 65px;
 	margin: 60px 0 25px;}
-.partner a{
+.home .partner {
+	display: table;
+}
+.home .partner a{
 	height: 65px;
 	vertical-align: middle;
 	display: table-cell;
