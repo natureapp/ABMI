@@ -2013,11 +2013,7 @@ body.news-page .row-fluid.breadcrumb-triangle .triangle, body.news-page .row.bre
        color: #8B1B1D;
        font-family: "Roboto Slab",serif;
 }
-.post-pdf{
-	font-weight:600;
-	background: url('../assets/pdf-orange.png') left center no-repeat;
-	padding-left:40px;
-}
+
 /* =================================== */
 /* ------------- FOOTER -------------- */
 

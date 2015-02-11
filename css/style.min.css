@@ -1979,6 +1979,11 @@ body.news-page .row-fluid.breadcrumb-triangle .triangle, body.news-page .row.bre
 	background-color: #BB6B0C !important;
 	border-radius: 100%;
 }
+.post-pdf{
+	font-weight:600;
+	background: url('../assets/pdf-orange.png') left center no-repeat;
+	padding-left:40px;
+}
 /* =================================== */
 /* ------------- FOOTER -------------- */
 
