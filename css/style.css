@@ -313,7 +313,9 @@ h1, h2, h3, h4, h5, h6 a.button {
 .jumbotron h1.sub-heading {
 	font-size: 3.2em;
 	font-weight: 400;}
-
+.jumbotron h1{
+	text-shadow:none;
+}
 h2 {
 	color: #282b2d;
 	font-size: 3.5em;
