@@ -1981,8 +1981,9 @@ body.news-page .row-fluid.breadcrumb-triangle .triangle, body.news-page .row.bre
 }
 .post-pdf{
 	font-weight:600;
-	background: url('../assets/pdf-orange.png') left center no-repeat;
-	padding-left:40px;
+	background: url('../assets/pdf-icon.png') left center no-repeat;
+	padding-left: 20px;
+	background-size: 17px auto;
 }
 /* =================================== */
 /* ------------- FOOTER -------------- */
