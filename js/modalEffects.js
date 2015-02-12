@@ -8,6 +8,13 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
+ 
+ document.addEventListener('ajaxLoaded', ajaxModalHandler);
+    
+                function ajaxModalHandler() {
+                                init();
+                };
+				
 var ModalEffects = (function() {
 
 	function init() {
