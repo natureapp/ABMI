@@ -2017,7 +2017,10 @@ body.news-page .row-fluid.breadcrumb-triangle .triangle, body.news-page .row.bre
        color: #8B1B1D;
        font-family: "Roboto Slab",serif;
 }
-
+ol.left-20{
+	display:inline-block;
+	padding-left:20px;
+}
 /* =================================== */
 /* ------------- FOOTER -------------- */
 
