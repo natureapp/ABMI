@@ -24,7 +24,7 @@
     
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5425da0c508c3835" async></script>
     <style>
-	.md-perspective,
+.md-perspective,
 .md-perspective body {
 	height: 100%;
 	overflow: hidden;
@@ -44,8 +44,8 @@
 	z-index: 1000;
 	position: fixed;
 	z-index: 1;
-	top: 65px;
-	right: 65px;
+	top: 100px;
+	right: 100px;
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
@@ -83,10 +83,10 @@
 .md-modal {
 	position: fixed;
 	background: rgba(49, 52, 54, 1);
-	top: 60px;
-	left: 60px;
-	right: 60px;
-	bottom: 60px;
+	top: 80px;
+	left: 80px;
+	right: 80px;
+	bottom: 80px;
 	height: auto;
 	overflow-x: scroll;
 	z-index: 2000;
@@ -94,21 +94,6 @@
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
-}
-@media (max-width:500px){
-.md-modal {
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	}
-.md-show.md-effect-1 .md-content {
-	padding: 50px !important;
-}
-.md-close {
-	top: 10px;
-	right: 10px;
-	}
 }
 .md-show {
 	visibility: visible;
@@ -154,11 +139,44 @@
 	opacity: 1;
 	background: rgba(49, 52, 54, 1);
 	color: #fff;
-	padding: 40px;
+	padding: 70px;
 }
 
-.md-content p, .md-content, .md-content li, .md-content a{
-	color: #fff;}
+.md-content p, .md-content li, .md-content a{
+	color: #fff;
+	font-size: 1.6rem;
+}
+@media (min-width:1200px){
+.md-modal {
+	top: 150px;
+	left: 150px;
+	right: 150px;
+	bottom: 150px
+}
+.md-close {
+	top: 180px;
+	right: 180px;
+}
+.md-show.md-effect-1 .md-content {
+	padding: 100px !important;
+}
+}
+
+@media (max-width:650px){
+.md-modal {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	}
+.md-show.md-effect-1 .md-content {
+	padding: 50px !important;
+}
+.md-close {
+	top: 10px;
+	right: 10px;
+	}
+}
 	</style>
   </head>
   
