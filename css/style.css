@@ -2040,11 +2040,11 @@ p.wp-caption-text{
 	border-radius: 100% !important;
 }
 .at4-icon.aticon-twitter, .at4-icon.aticon-pinterest_share, .at4-icon.aticon-pinterest, .at4-icon.aticon-email, .at4-icon.aticon-compact, .at4-icon.aticon-more, .at4-icon.aticon-expanded, .at4-icon.aticon-addthis, .at4-icon.aticon-compact, .at4-icon.aticon-more, .at4-icon.aticon-expanded, .at4-icon.aticon-addthis {
-	background-position: center center;
+	background-position: center center !important;
 }
 
 .at4-icon.aticon-facebook {
-	background-position: 1px 1px;
+	background-position: 1px 1px !important;
 	background-size: 20px !important;
 }
 /* =================================== */
