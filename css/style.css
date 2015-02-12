@@ -921,12 +921,11 @@ body a.btn-learn.sidebar-btn{
 
 .aside .widget ul li {
 	list-style-type: none;}
-.sidemenu ul li.active {
-	margin-bottom: 25px !important;
-}
 .aside .list.widget li {
 	margin-bottom: 30px;}
-
+.sidemenu ul.submenu {
+	margin-top: -2px !important;
+}
 .page-content a {
 	color: #74882E;}
 
