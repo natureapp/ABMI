@@ -2021,6 +2021,9 @@ ol.left-20{
 	display:inline-block;
 	padding-left:20px;
 }
+p.wp-caption-text{
+	margin-bottom:0px !important;
+}
 /* =================================== */
 /* ------------- FOOTER -------------- */
 
