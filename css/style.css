@@ -2027,6 +2027,26 @@ p.wp-caption-text{
 .projectshorttitle{
 	font-family: "Roboto Slab", serif;
 }
+.addthis_20x20_style .at4-icon, .addthis_20x20_white_style .at4-icon, .at-20x20 {
+	width: 26px !important;
+	height: 26px !important;
+	line-height: 20px !important;
+	background-size: 20px !important;
+	padding-left: 0px !important;
+}
+.at-share-tbx-element.addthis_20x20_style .at-share-btn, .at-share-tbx-element.addthis_20x20_white_style .at-share-btn {
+	max-width: 26px !important;
+	max-height: 26px !important;
+	border-radius: 100% !important;
+}
+.at4-icon.aticon-twitter, .at4-icon.aticon-pinterest_share, .at4-icon.aticon-pinterest, .at4-icon.aticon-email, .at4-icon.aticon-compact, .at4-icon.aticon-more, .at4-icon.aticon-expanded, .at4-icon.aticon-addthis {
+	background-position: center center;
+}
+
+.at4-icon.aticon-facebook {
+	background-position: 1px 1px;
+	background-size: 20px !important;
+}
 /* =================================== */
 /* ------------- FOOTER -------------- */
 
