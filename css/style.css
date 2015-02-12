@@ -1576,7 +1576,7 @@ div.arrowcontainer {
 	display: inline-block;}
 	
 div.postmeta { margin: 0 0 0 30px; min-width: 290px; height: auto; }
-div.postmeta p { margin-bottom: 0.35em; font-size: 1.2rem; }
+div.postmeta p {margin: 0 0px 4px; font-size: 1.2rem; }
 div.arrowcontainer .postmeta.arrow{ display: none; visibility: hidden;}
 
 .postmeta {
@@ -2536,7 +2536,8 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		padding-right: 60px;}
 	
 	.postheader h3{
-		font-size: 3.2rem;}
+		font-size: 3.2rem;
+		padding: 10px 20px;}
 	
 	footer ul {
 		margin-bottom: 0px;}
