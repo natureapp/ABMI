@@ -2913,6 +2913,9 @@ margin-bottom:1em; /*added by joan */
 	div.side-top-nav.col-lg-3{
 		float: right;
 		padding-top: 35px;}
+	.main{
+		padding-right: 40px;
+	}
 
 /* ---------------- */			
 }
