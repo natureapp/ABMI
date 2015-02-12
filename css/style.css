@@ -2918,6 +2918,10 @@ margin-bottom:1em; /*added by joan */
 	.main{
 		padding-right: 40px;
 	}
+	.main .main{
+		padding-right: 0px;
+		padding-left:0px;
+	}
 	.sidemenu h4{
 		margin-bottom: 35px;
 	}
