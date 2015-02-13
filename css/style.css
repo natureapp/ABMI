@@ -2223,8 +2223,8 @@ div.zoomImageBox{ margin-bottom: 2em; }
 /* =============== MEDIA QUERIES =============== */
 @media (max-width: 1199px) {
 	.container.nav-container{
-		padding-left: 0;
-		padding-right: 0;}
+		padding-left: 0 !important;
+		padding-right: 0 !important;}
 }
 @media only screen and (max-width: 320px) {
 
