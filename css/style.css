@@ -2221,7 +2221,11 @@ div.zoomImageBox{ margin-bottom: 2em; }
 /* =============== ============= =============== */
 
 /* =============== MEDIA QUERIES =============== */
-
+@media (max-width: 1199px) {
+	.container.nav-container{
+		padding-left: 0;
+		padding-right: 0;}
+}
 @media only screen and (max-width: 320px) {
 
 	input.sidemenuSearch {
@@ -2241,9 +2245,6 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		font-size: 16px;
 		font-size: 1.6rem;}
 	
-	.container.nav-container{
-		padding-left: 0;
-		padding-right: 0;}
 	
 	.navbar-header{
 		padding-right: 15px;}
