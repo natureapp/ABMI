@@ -490,7 +490,7 @@ p, li{
 
 p {
 	margin-bottom: 24px;
-	line-height:2em}
+	line-height:1.6em}
 
 .tile p {
 	color: white;
@@ -2341,7 +2341,7 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		padding: 15px 30px;}
 	
 	p, li {
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 		}
 	li{
 		line-height: 1.9em;
