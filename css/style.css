@@ -1812,6 +1812,7 @@ div.post-box-share .addthis_20x20_style .at300bs{
 	background:#ffffff;
 	display:table;
 	margin-bottom:40px;
+	position: relative;
 }
 .shortpost-list{
 	display: inline-block;
@@ -1821,10 +1822,7 @@ div.post-box-share .addthis_20x20_style .at300bs{
 	padding:20px;
 	float:left;
 }
-.post-feature-img img{
-	width:100%;
-	height:auto;
-}
+
 .publication-post .post-header h3{
 	color:#74882E;
 }
@@ -1834,11 +1832,32 @@ div.post-box-share .addthis_20x20_style .at300bs{
 	font-size:32px;
 	margin-bottom:10px;
 }
+@media (min-width:767px){
 .post-feature-img{
-	width: 200px;
-	height: auto;
-	float: right;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	overflow: hidden;
+	float:right;
 }
+.post-feature-img img {
+	min-width: 100%;
+	height: 100%;
+	max-width: 500px;
+}
+}
+.post-feature-img{
+	width: auto;
+	height: auto;
+	float: left;
+	max-width:100%;
+}
+.post-feature-img img{
+	width:auto;
+	height:auto;
+	max-width:100%;
+}
+
 .publication-post h4{
 	color:#74882E;
 }
