@@ -1177,10 +1177,10 @@ a.zoom.fullzoom{
 	content: url('../assets/pdf-black.png');
 	padding: 0.6em;}
 
-.sidemenuSearch::-webkit-input-placeholder { color: #414042;}
+/*.sidemenuSearch::-webkit-input-placeholder { color: #414042;}
 .sidemenuSearch:-moz-placeholder {color: #414042;}
 .sidemenuSearch::-moz-placeholder {color: #414042;}
-.sidemenuSearch:-ms-input-placeholder {color: #414042;}
+.sidemenuSearch:-ms-input-placeholder {color: #414042;}*/
 input:focus{
 	outline:0;
 }
