@@ -1843,7 +1843,7 @@ div.post-box-share .addthis_20x20_style .at300bs{
 }
 .post-feature-img img {
 	min-width: 100%;
-	height: 100% !Important;
+	min-height: 100% !Important;
 	max-width: 500px !important;
 }
 }
