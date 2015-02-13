@@ -463,7 +463,7 @@ a:hover {
 	margin-right: 15px;}
 
 .top-bar ul li {
-	float: left;
+	display:inline;
 	margin: 6px 0 0 22px;}
 
 .top-bar ul li a {
