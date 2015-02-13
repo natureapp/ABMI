@@ -23,7 +23,32 @@
     <![endif]-->
     
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5425da0c508c3835" async></script>
-
+ <style>
+	input:focus, select:focus, textarea:focus, button:focus{
+		outline:none;
+	}
+	.contact-form > .form-input, .contact-form > form input, .contact-form > form select, .contact-form > form textarea {
+		margin-bottom: 25px;
+		width: 100%;
+		background: #fff;
+		border: none;
+		font-size:16px;
+		padding-left: 1em;
+		color:#414042;
+		font-family: "Open Sans", sans-serif;
+		border-radius:0px;
+		-moz-border-radius:0px;
+		-webkit-border-radius:0px;
+		-ms-border-radius:0px;
+	}
+	.contact-form .submit{
+		margin-top:60px;
+	}
+	.contact-form .form-input::-webkit-input-placeholder { color: rgba(65, 64, 66, 0.5);}
+	.contact-form .form-input:-moz-placeholder {color: rgba(65, 64, 66, 0.5);}
+	.contact-form .form-input::-moz-placeholder {color: rgba(65, 64, 66, 0.5);}
+	.contact-form .form-input:-ms-input-placeholder {color: rgba(65, 64, 66, 0.5);}
+	</style>
   </head>
   
   <body class="container-fluid contact-us preload">
@@ -225,38 +250,13 @@
 				<p class="dbm">Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet.</p>
 				
 				<div class="row contact-form">
-					<form>
-						<div class="col-xs-12 col-md-6">
-							<label for="input-yourName">Your Name:</label>
-							<input type="text" id="input-yourName" name="input-yourName" placeholder="What do they call you?" required>
-						</div>
-	
-						<div class="col-xs-12 col-md-6">
-							<label for="input-yourEmail">Your Email:</label>
-							<input type="email" id="input-yourEmail" name="input-yourEmail" placeholder="you@youremail.com" required>
-						</div>
+					<form class="col-xs-12">
+						<input type="text" id="input-yourName" name="input-yourName" class="form-input" placeholder="Your Name" required>
+						<input type="email" id="input-yourEmail" name="input-yourEmail" class="form-input" placeholder="Your Email" required>
+						<input type="text" id="input-yourSubject" name="input-yourSubject" class="form-input" placeholder="Your subject" required >
+						<textarea id="textarea-yourMessage" name="textarea-yourMessage" class="form-input" placeholder="What’s on your mind?" required></textarea>
+						<button type="submit" class="submit">Send</button>	
 						
-						<div class="col-xs-12 col-md-6">
-							<label for="select-department">Department:</label>
-							<select id="select-department" name="select-department">
-								<option value="Media Inquiries" selected="selected">Media Inquiries</option>
-								<option value="General Questions">General Questions</option>
-							</select>
-						</div>
-						
-						<div class="col-xs-12 col-md-6">
-							<label for="input-yourSubject">Your Subject:</label>
-							<input type="text" id="input-yourSubject" name="input-yourSubject" placeholder="your subject" required>
-						</div>
-						
-						<div class="col-xs-12">
-							<label for="textarea-yourMessage">Your Message:</label>
-							<textarea id="textarea-yourMessage" name="textarea-yourMessage" placeholder="What’s on your mind?" required></textarea>
-						</div>
-						
-						<div class="col-xs-12">
-							<button type="submit">Send</button>	
-						</div>
 					</form>
 					
 				</div>	
