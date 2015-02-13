@@ -2768,9 +2768,9 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		float: none !important;}
 	
 	.navbar-nav > li {
-		float: none;
-		display: inline-block;
-		width: 100%;}
+		display: block;
+		width: 100%;
+		float: left;}
 	
 	.navbar-nav > li > a {
 		padding-top: 10px;
