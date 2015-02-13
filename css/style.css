@@ -2122,15 +2122,14 @@ footer p {
 
 .contact-form > form label{
 	display: inline-block;
-	float: none;
-	color: #F3F1DE;
-	background: #677523;
-	padding: 0.8em 1.6em 0.6em 1.2em;
-	font-size: 18px;
-	font-size: 1.8em;
-	text-align: left;
-	margin-bottom: 0;
-	font-weight: 200;}
+float: none;
+color: #474747;
+padding: 0px 0px 15px;
+font-size: 16px;
+font-weight: 400 !Important;
+text-align: left;
+margin-bottom: 0;
+font-family: "Roboto Slab", serif;}
 
 .contact-form > form input, .contact-form > form select, .contact-form > form textarea{
 	display: block;
