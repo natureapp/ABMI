@@ -2027,6 +2027,11 @@ p.wp-caption-text{
 .projectshorttitle{
 	font-family: "Roboto Slab", serif;
 }
+.projectshorttitle h5{
+	margin: 0px;
+	color: #fff;
+	font-size: 2.1rem;
+}
 .addthis_20x20_style .at4-icon, .addthis_20x20_white_style .at4-icon, .at-20x20 {
 	width: 26px !important;
 	height: 26px !important;
@@ -2263,7 +2268,7 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		margin-bottom: 40px;}
 	
 	.navbar-nav {
-		margin: 0;}
+		margin-right: 0 !important;}
 	
 	.logo {
 		height: 67px;
