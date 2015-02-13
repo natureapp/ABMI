@@ -158,10 +158,10 @@ html body #LiveCSSEditor-code{
 	background-color: rgba(222, 219, 204, 0.9);
 	border: none;
 	color: #282b2d;}
-.contact-form  input::-webkit-input-placeholder, 
-.contact-form input:-moz-placeholder, 
-.contact-form input::-moz-placeholder,
-i.contact-form nput:-ms-input-placeholder{
+.navbar-collapse.in .search-collapse input::-webkit-input-placeholder, 
+.navbar-collapse.in .search-collapse input:-moz-placeholder, 
+.navbar-collapse.in .search-collapse input::-moz-placeholder,
+.navbar-collapse.in .search-collapse input:-ms-input-placeholder{
 	color:rgba(140, 138, 126, 1) !important;}
 .navbar-collapse.in .search-collapse{
 	margin: 0;
