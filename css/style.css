@@ -3002,6 +3002,10 @@ margin-bottom:1em; /*added by joan */
 	.home .partner, .home .partner a{
 		display: block;
 	}
+	.breadcrumb .container{
+		margin-left:-15px;
+		margin-right:-15px;
+	}
 }
 @media (max-width:1199px){
 	.aside ul.sidemenu-nav-expand {
