@@ -460,7 +460,8 @@ a:hover {
 .top-bar ul {
 	float: right;
 	margin-bottom: 0; 
-	margin-right: 15px;}
+	margin-right: 15px;
+	margin-top: 4px;}
 
 .top-bar ul li {
 	display:inline;
