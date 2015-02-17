@@ -158,11 +158,11 @@ html body #LiveCSSEditor-code{
 	background-color: rgba(222, 219, 204, 0.9);
 	border: none;
 	color: #282b2d;}
-/*.navbar-collapse.in .search-collapse input::-webkit-input-placeholder, 
+.navbar-collapse.in .search-collapse input::-webkit-input-placeholder, 
 .navbar-collapse.in .search-collapse input:-moz-placeholder, 
 .navbar-collapse.in .search-collapse input::-moz-placeholder,
 .navbar-collapse.in .search-collapse input:-ms-input-placeholder{
-	color:rgba(140, 138, 126, 1) !important;}*/
+	color:rgba(140, 138, 126, 1) !important;}
 .navbar-collapse.in .search-collapse{
 	margin: 0;
 	position: relative;
@@ -1212,11 +1212,11 @@ button.sidemenuSearchBtn:hover{
 	/*margin-bottom: 3em;*/
 	}
 
-/*input.sidemenuSearch::-webkit-input-placeholder { color: #414042;}
-input.sidemenuSearch:-moz-placeholder {color: #414042;}
-input.sidemenuSearch::-moz-placeholder { color: #414042;} 
+input.sidemenuSearch::-webkit-input-placeholder { color: #414042;}
+input.sidemenuSearch:-moz-placeholder { /* older Firefox*/ color: #414042;}
+input.sidemenuSearch::-moz-placeholder { /* Firefox 19+ */ color: #414042;} 
 input.sidemenuSearch:-ms-input-placeholder { color: #414042;}
-*/
+
 a.sidemenuFullPostBtn, a.sidemenuListPostBtn, a.sidemenuEventPostBtn{
 	width: 35px;
 	height: 35px;
@@ -2126,10 +2126,10 @@ footer p {
 	font-size: 1.3em;
 	/* padding: 23px 15px; */
 	}
-/*.form-control::-webkit-input-placeholder { font-style:normal;}
+.form-control::-webkit-input-placeholder { font-style:normal;}
 .form-control:-moz-placeholder{ font-style:normal;}
 .form-control::-moz-placeholder { font-style:normal;}
-.form-control:-ms-input-placeholder { font-style:normal;}*/
+.form-control:-ms-input-placeholder { font-style:normal;}
 
 @-moz-document url-prefix() { 
 	
