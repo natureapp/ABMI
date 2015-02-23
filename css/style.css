@@ -1183,6 +1183,12 @@ a.zoom.fullzoom{
 .sidemenuSearch:-moz-placeholder {color: #414042;}
 .sidemenuSearch::-moz-placeholder {color: #414042;}
 .sidemenuSearch:-ms-input-placeholder {color: #414042;}*/
+
+input.sidemenuSearch::-webkit-input-placeholder { color: #414042;}
+input.sidemenuSearch:-moz-placeholder {color: #414042;}
+input.sidemenuSearch::-moz-placeholder {color: #414042;}
+input.sidemenuSearch:-ms-input-placeholder {color: #414042;}
+
 input:focus{
 	outline:0;
 }
