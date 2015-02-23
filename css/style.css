@@ -985,7 +985,7 @@ body.events-page .row-fluid.breadcrumb-triangle .triangle,body.events-page .row.
 	
 .sidemenu-nav-expand input[type="button"] {
 	font-family: "Roboto Slab", serif;
-	background: transparent url('../assets/collapsed-minus.png') no-repeat right center;
+	background: transparent url('../assets/collapsed-minus.png') no-repeat right 50px top 23px;
 	font-weight: normal;	
 	font-size: 24px;
 	padding: 15px 35px 17px 0;
@@ -1017,7 +1017,7 @@ body.events-page .row-fluid.breadcrumb-triangle .triangle,body.events-page .row.
 	font-weight: normal;}
 	
 .sidemenu-nav-expand input[type="button"].collapsed {
-	background: transparent url('../assets/collapsed-plus.png') no-repeat right center;	
+	background: transparent url('../assets/collapsed-plus.png') no-repeat right 50px top 23px;	
 	text-align: right;	
 	font-weight: normal;
 	color: #74882E;}
