@@ -1421,7 +1421,9 @@ a.btn.btn-learn.pdf,  a.btn.btn-learn.pdf:hover,  a.btn.btn-learn.pdf:active {
 	max-width: 100%;
 	width: 100%;
 	display: inline-block;}
-
+.teammember .postheader img {
+	width: 60% !important;
+}
 .careers .heading {
 	min-height: 90px;}
 
@@ -2244,7 +2246,9 @@ div.zoomImageBox{ margin-bottom: 2em; }
 
 	input.sidemenuSearch {
 		max-width: 208px;}
-
+	.teammember .postheader img {
+		width: 100% !important;
+	}
 }
 
 /* =============== ============= =============== */
