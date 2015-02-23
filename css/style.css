@@ -1591,7 +1591,7 @@ body.events-page .postheader h3 {
 div.arrowcontainer {
 	display: inline-block;}
 	
-div.postmeta { margin: 0 0 0 30px; min-width: 290px; height: auto; }
+div.postmeta { margin: 0 0 0 30px; min-width: 230px; height: auto; }
 div.postmeta p {margin: 0 0px 4px; font-size: 1.2rem; }
 div.arrowcontainer .postmeta.arrow{ display: none; visibility: hidden;}
 
@@ -2347,7 +2347,7 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		line-height: 1.4em;}
 	
 	.postheader h3{
-		font-size: 2.6rem;}
+		font-size: 2rem;}
 	
 	h5 {
 		font-size: 15px;
