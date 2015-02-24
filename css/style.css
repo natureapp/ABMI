@@ -1127,7 +1127,9 @@ a.zoom.fullzoom{
 	content: url('../assets/pdf-icon.png') !important;
 	padding: 4px 10px 0px !important;
 	vertical-align: middle;
-	display: inline-block;
+	position: relative;
+	left: 0;
+	top: 0;
 }
 /* -------------------------------------------- */	
 /* ------- SIDEBAR ---------------------------- */	
@@ -1639,7 +1641,9 @@ div.arrowcontainer .postmeta.arrow{ display: none; visibility: hidden;}
 	padding-top: 5px;
 	color: #BB6B0C;
 	vertical-align: top;
-	background: transparent !important;}
+	background: transparent !important;
+	position: relative;
+	display: flex;}
 
 .main p > a.postLink{
 	font-weight: 600;
