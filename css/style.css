@@ -2150,6 +2150,13 @@ footer p {
 .form-control::-moz-placeholder { font-style:normal;}
 .form-control:-ms-input-placeholder { font-style:normal;}
 */
+
+.form-control::-webkit-input-placeholder { color:rgba(40, 43, 45, 0.7) !important;}
+.form-control:-moz-placeholder{  color:rgba(40, 43, 45, 0.7)!important;}
+.form-control::-moz-placeholder {  color:rgba(40, 43, 45, 0.7)!important;}
+.form-control:-ms-input-placeholder { color:rgba(40, 43, 45, 0.7)!important;}
+
+
 @-moz-document url-prefix() { 
 	
 	.form-control {
