@@ -491,7 +491,8 @@ p, li{
 
 p {
 	margin-bottom: 24px;
-	line-height:1.6em}
+	line-height:1.6em
+	font-size: 1.5rem !Important;}
 
 .tile p {
 	color: white;
@@ -1796,7 +1797,6 @@ div.post-box-share .addthis_20x20_style .at300bs{
 	font-size: 1.7rem;}
 
 .download-resource p, .bod p{
-	font-size: 1.3rem;
 	margin-top: 1em;}
 
 .download-resource a.btn.btn-learn, .bod a.btn.btn-learn, .openforapps a.btn.btn-learn, .reviewingapps a.btn.btn-learn, .projectboxes a.btn.btn-learn{
