@@ -2246,6 +2246,9 @@ div.zoomImageBox{ margin-bottom: 2em; }
 .zoomwizard.zoomwizard-large{ -webkit-border-radius: 125px; -moz-border-radius: 125px; border-radius: 125px;}
 
 /* =============== ============= =============== */
+.postactions p{
+	width:100%;
+}
 /* =============== ============= =============== */
 
 /* =============== MEDIA QUERIES =============== */
@@ -2450,7 +2453,8 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		padding-left: 0;}
 	
 	.postactions p{
-		float: left;}
+		float: left;
+	}
 	
 	.row-fluid.explore,.row.explore {
 		padding-top: 2em;}
