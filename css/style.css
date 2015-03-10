@@ -3051,7 +3051,7 @@ margin-bottom:1em; /*added by joan */
 		float: right;
 		margin-top: 0.8em;}
 }
-@media (min-width:300px){
+@media (max-width:399px){
 .input-group .input-group-field {
   float: left;
   width: 70%;
