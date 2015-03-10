@@ -3054,7 +3054,6 @@ margin-bottom:1em; /*added by joan */
 @media (max-width:399px){
 .input-group .input-group-field {
   float: left;
-  width: 70%;
 }
 }
 /* END MIN 1200 WIDTH MQ ------ */
