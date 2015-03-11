@@ -2259,7 +2259,7 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		padding-left: 0 !important;
 		padding-right: 0 !important;}
 }
-@media (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 900px) {
 	.raw-sidenav .navigation li.large-menu> a{
 		font-size: 1.6vw !important;
 	}
