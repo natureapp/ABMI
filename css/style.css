@@ -2261,7 +2261,7 @@ div.zoomImageBox{ margin-bottom: 2em; }
 }
 @media (max-width: 1024px) {
 	.raw-sidenav .navigation li.large-menu> a{
-		font-size: 1.6vw;
+		font-size: 1.6vw !important;
 	}
 }
 @media only screen and (max-width: 320px) {
