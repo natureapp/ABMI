@@ -2259,6 +2259,11 @@ div.zoomImageBox{ margin-bottom: 2em; }
 		padding-left: 0 !important;
 		padding-right: 0 !important;}
 }
+@media (max-width: 1024px) {
+	.raw-sidenav .navigation li.large-menu> a{
+		font-size: 1.6vw;
+	}
+}
 @media only screen and (max-width: 320px) {
 
 	input.sidemenuSearch {
