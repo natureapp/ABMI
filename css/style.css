@@ -2195,9 +2195,10 @@ font-family: "Roboto Slab", serif;}
 	width: 96%;
 	height: 2.8em;
 	padding-left: 1em;
-	background: #E2E0D0;
-	border: solid 1px #E2E0D0;
-	color: #282b2d;}
+	background: #ffffff;
+	border: none;
+	color: rgba(169, 169, 169, 1);
+	font-family: "Open Sans", sans-serif;}
 
 .contact-form > form textarea{
 	min-height: 12em;
