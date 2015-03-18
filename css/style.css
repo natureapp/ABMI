@@ -2192,7 +2192,7 @@ font-family: "Roboto Slab", serif;}
 	font-size: 18px;
 	font-size: 1.8em;
 	text-align: left;
-	width: 96%;
+	width: 100%;
 	height: 52px;
 	padding-left: 1em;
 	background: #ffffff;
@@ -2202,7 +2202,7 @@ font-family: "Roboto Slab", serif;}
 
 .contact-form > form textarea{
 	min-height: 12em;
-	width: 98%;
+	width: 100%;
 	padding-top: 0.5em;}
 
 .contact-form > form input[type=submit]{ /*joan changed from button to input */
