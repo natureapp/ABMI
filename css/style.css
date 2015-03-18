@@ -2216,7 +2216,8 @@ font-family: "Roboto Slab", serif;}
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 0.5em;
-		max-width:190px; /*added by joan*/
+	max-width:190px; /*added by joan*/
+	line-height: 10px;/*added by nidhi*/
 	}
 
 
