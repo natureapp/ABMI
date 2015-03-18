@@ -2188,12 +2188,12 @@ font-family: "Roboto Slab", serif;}
 .contact-form > form input, .contact-form > form select, .contact-form > form textarea{
 	display: block;
 	float: none;
-	margin-bottom: 2.2em;
+	margin-bottom: 10px;
 	font-size: 18px;
 	font-size: 1.8em;
 	text-align: left;
 	width: 96%;
-	height: 2.8em;
+	height: 52px;
 	padding-left: 1em;
 	background: #ffffff;
 	border: none;
@@ -2218,7 +2218,8 @@ font-family: "Roboto Slab", serif;}
 	text-transform: uppercase;
 	margin-bottom: 0.5em;
 	max-width:190px; /*added by joan*/
-	line-height: 10px;/*added by nidhi*/
+	line-height: 10px;
+	margin-top: 60px;
 	}
 
 
